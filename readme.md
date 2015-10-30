@@ -26,7 +26,7 @@ __Example Scoresheet__
 ## Restrictions
 
   - __CSS:__ <br />Only normalize.css allowed, no additional css frameworks are permitted. Normalize.css is included in the provided template.
-  - __JavaScript:__ <br />VanillaJS, jQuery, or Angular Core only(or similar framework - react, backbone, etc) . No extra widget libraries
+  - __JavaScript:__ <br />The included bowlingscore.js file, VanillaJS, jQuery, or Angular Core only(or similar framework - react, backbone, etc) . No extra widget libraries.
   - __HTML:__ <br />Semantic, well-formed, and accessible HTML preferred
 
 ## Bowling Scoring Rules
