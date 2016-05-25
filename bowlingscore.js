@@ -1,19 +1,22 @@
-  (function() {
+var BowlingScore = (function(BowlingScore) {
+    BowlingScore = BowlingScore || {}
+    BowlingScore.calculate = totalScore
+    return BowlingScore
+
     // example of use:
-    // totalScore({
+    // BowlingScore.calculate({
     //  frames: [
     //    {roll1: 5, roll2: 5},
     //    more frames...
     //    {roll1: 7, roll2: 3, roll3: 5} // possible third roll on last frame
     //  ]
     //})
-    
     function totalScore(game) {
      return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reduce(function (acc, i) {
         return acc + (frameScore(game, i) || 0)
       }, 0)
     }
-  
+
     function frameScore(game, frameNumber) {
     var frames = game.frames,
         frame = frames[frameNumber],
@@ -49,4 +52,4 @@
       return frames[i+2].roll1
     }
   }
-}())
+}(window.BowlingScore))
